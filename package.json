@@ -21,8 +21,13 @@
   },
   "bugs": "https://github.com/zacanger/clcl/issues",
   "keywords": [
-    "",
-    "clcl"
+    "clipboard",
+    "clipboard-manager",
+    "manager",
+    "pbcopy",
+    "pbpaste",
+    "xclip",
+    "xsel"
   ],
   "dependencies": {},
   "devDependencies": {},
