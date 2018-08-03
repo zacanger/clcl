@@ -9,6 +9,7 @@ const adapter = new FileSync(dbPath)
 const db = low(adapter)
 
 const usage = () => console.log(`
+  (nothing yet implemented)
   clcl -h      # print help
   clcl -l      # list all
   clcl -s [n]  # select entry at index n
@@ -19,6 +20,9 @@ const usage = () => console.log(`
 db.defaults({ clcl: [] }).write()
 
 const handleArgs = () => {
+  usage()
+  exit(0)
+  // TODO:
   const firstArg = args[0]
   if (!firstArg || hasFlag('help')) {
     usage()
