@@ -5,7 +5,7 @@ X11 CLi CLipboard manager.
 **WIP**
 
 This program is still in progress. See the roadmap section for stuff that
-doesn't work yet.
+doesn't work yet. This is buggy.
 
 --------
 
@@ -34,7 +34,6 @@ clcl-daemon & # add this line
 
 ## Roadmap
 
-* Sync clipboard to store
 * Work with primary selection?
 * Other platforms?
 * Other init systems?

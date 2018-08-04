@@ -2,7 +2,6 @@ const { version } = require('../package.json')
 
 const s = `
   clcl v${version}
-  (sync from clipboard not yet implemented)
 
   clcl -h      # print help
   clcl -l      # list all
