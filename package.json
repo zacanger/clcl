@@ -13,7 +13,9 @@
     "index.js",
     "src"
   ],
-  "bin": "./index.js",
+  "bin": {
+    "clcl": "./index.js"
+  },
   "scripts": {
     "preversion": "npm t",
     "test": "npm run test:lint",
