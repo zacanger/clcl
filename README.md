@@ -1,8 +1,11 @@
 # clcl
 
-**WIP**, doesn't do anything yet.
-
 CLi CLipboard manager.
+
+**WIP**
+
+This program is still in progress. See the roadmap section for stuff that
+doesn't work yet.
 
 --------
 
