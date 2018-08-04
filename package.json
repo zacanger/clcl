@@ -41,7 +41,8 @@
     "clipboardy": "1.2.3",
     "lowdb": "1.0.0",
     "xdg-basedir": "3.0.0",
-    "zeelib": "8.0.0"
+    "zeelib": "8.0.0",
+    "zrgs": "1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "8.2.6",
@@ -51,8 +52,7 @@
     "eslint-plugin-import": "2.13.0",
     "eslint-plugin-node": "7.0.1",
     "eslint-plugin-promise": "3.8.0",
-    "eslint-plugin-unicorn": "5.0.0",
-    "zrgs": "1.0.0"
+    "eslint-plugin-unicorn": "5.0.0"
   },
   "engines": {
     "node": ">=8.0.0"
