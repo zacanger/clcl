@@ -17,8 +17,6 @@ const select = require('./select')
 db.defaults({ clcl: [] }).write()
 
 const handleArgs = () => {
-  usage()
-  exit(0)
   const firstArg = args[0]
   const secondArg = args[1]
   if (!firstArg || hasFlag('help')) {

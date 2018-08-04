@@ -1,5 +1,5 @@
-module.exports = (idx, db) => {
+module.exports = (ix, db) => {
+  const idx = parseInt(ix, 10)
   const all = db.get('clcl').value()
-  const toRemove = all[idx]
-  console.log(toRemove)
+  db.set('clcl', all.filter((_, i) => i !== idx)).write()
 }

@@ -1,4 +1,7 @@
-/* eslint-disable no-unused-vars */
+const clip = require('clipboardy')
+
 module.exports = (idx, db) => {
-  // do stuff
+  const all = db.get('clcl').value()
+  const ours = all[idx] || ''
+  clip.writeSync(ours)
 }

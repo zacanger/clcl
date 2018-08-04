@@ -24,12 +24,9 @@ CLi CLipboard manager.
 ## Roadmap
 
 * Sync clipboard to JSON
-* Remove individual items
-* Clear all
-* Re-select old entry
-* Sync primary (Linux)?
-* Mac support
-* Windows support
+* Sync primary selection?
+* Mac support?
+* Windows support?
 
 ## License
 
