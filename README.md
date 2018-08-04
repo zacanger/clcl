@@ -2,8 +2,6 @@
 
 X11 CLi CLipboard manager.
 
-**Important**: Requires X and systemd.
-
 **WIP**
 
 This program is still in progress. See the roadmap section for stuff that
@@ -15,6 +13,14 @@ doesn't work yet.
 
 `npm i -g clcl`
 
+You'll need to manually start the daemon. I put this in my `~/.xinitrc`:
+```
+#!/bin/sh
+# wallpaper, keybinds, etc. up here
+exec clcl-daemon
+exec i3 # your window manager goes here
+```
+
 ## Usage
 
 ```
@@ -24,7 +30,6 @@ doesn't work yet.
   clcl -r [n]  # remove entry at index n
   clcl -c      # clear all
 ```
-
 
 ## Roadmap
 
