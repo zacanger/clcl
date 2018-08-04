@@ -8,33 +8,29 @@ const dbPath = xdg.data + '/clcl.json'
 const adapter = new FileSync(dbPath)
 const db = low(adapter)
 
-const usage = () => console.log(`
-  (nothing yet implemented)
-  clcl -h      # print help
-  clcl -l      # list all
-  clcl -s [n]  # select entry at index n
-  clcl -r [n]  # remove entry at index n
-  clcl -c      # clear all
-`)
+const usage = require('./usage')
+const list = require('./list')
+const remove = require('./remove')
+const clear = require('./clear')
+const select = require('./select')
 
 db.defaults({ clcl: [] }).write()
 
 const handleArgs = () => {
   usage()
   exit(0)
-  // TODO:
   const firstArg = args[0]
+  const secondArg = args[1]
   if (!firstArg || hasFlag('help')) {
     usage()
-    exit(0)
   } else if (hasFlag('list')) {
-    // handle
+    list(db)
   } else if (hasFlag('select')) {
-    // handle
+    select(secondArg, db)
   } else if (hasFlag('remove')) {
-    // handle
+    remove(secondArg, db)
   } else if (hasFlag('clear')) {
-    // handle
+    clear(db)
   } else {
     usage()
     exit(1)

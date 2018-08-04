@@ -37,6 +37,7 @@
   "dependencies": {
     "clipboardy": "1.2.3",
     "lowdb": "1.0.0",
+    "prettyjson": "1.2.1",
     "xdg-basedir": "3.0.0",
     "zeelib": "7.0.6"
   },
