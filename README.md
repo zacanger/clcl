@@ -14,11 +14,12 @@ doesn't work yet.
 `npm i -g clcl`
 
 You'll need to manually start the daemon. I put this in my `~/.xinitrc`:
-```
+
+```shell
 #!/bin/sh
-# wallpaper, keybinds, etc. up here
-exec clcl-daemon
+# merge xresources, set keybinds, etc
 exec i3 # your window manager goes here
+clcl-daemon & # add this line
 ```
 
 ## Usage
