@@ -1,0 +1,10 @@
+[Unit]
+Description=Start clcl daemon
+After=display-manager.service
+
+[Service]
+ExecStart=/usr/local/bin/clcl-daemon
+Restart=always
+
+[Install]
+WantedBy=default.target

@@ -1,6 +1,6 @@
 {
   "name": "clcl",
-  "description": "CLi CLipboard manager",
+  "description": "X11 CLi CLipboard manager",
   "version": "0.1.1",
   "author": {
     "name": "Zac Anger",
@@ -29,8 +29,7 @@
     "clipboard",
     "clipboard-manager",
     "manager",
-    "pbcopy",
-    "pbpaste",
+    "x11",
     "xclip",
     "xsel"
   ],
@@ -55,6 +54,8 @@
     "node": ">=8.0.0"
   },
   "os": [
+    "freebsd",
+    "openbsd",
     "linux"
   ]
 }

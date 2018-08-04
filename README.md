@@ -1,6 +1,8 @@
 # clcl
 
-CLi CLipboard manager.
+X11 CLi CLipboard manager.
+
+**Important**: Requires X and systemd.
 
 **WIP**
 
@@ -26,10 +28,10 @@ doesn't work yet.
 
 ## Roadmap
 
-* Sync clipboard to JSON
-* Sync primary selection?
-* Mac support?
-* Windows support?
+* Sync clipboard to store
+* Work with primary selection?
+* Other platforms?
+* Other init systems?
 
 ## License
 
