@@ -1,5 +1,4 @@
-const format = (list) =>
-  list.reduce((p, c, i) => `${p}\n${i}: ${(c || '').trim()}`, '').trim()
+const { format } = require('./util')
 
 module.exports = (db) => {
   const all = db.get('clcl').value()
