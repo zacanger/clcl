@@ -3,9 +3,5 @@ const format = (list) =>
 
 module.exports = (db) => {
   const all = db.get('clcl').value()
-  if (!all || !all.length) {
-    console.log('')
-  } else {
-    console.log(format(all))
-  }
+  console.log((all && all.length) ? format(all) : '')
 }

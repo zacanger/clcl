@@ -34,6 +34,7 @@ clcl-daemon & # add this line
 
 ## Roadmap
 
+* Listen for copy events, rather than polling for changes synchronously
 * Work with primary selection?
 * Other platforms?
 * Other init systems?
