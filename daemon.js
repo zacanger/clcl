@@ -13,7 +13,8 @@ const sync = () => {
   const contents = clip.readSync()
   const current = db.get('clcl').value()
   if (current[0] !== contents) {
-    db.set('clcl', [ contents ].concat(current)).write()
+    const nv = [ contents ].concat(current).filter(Boolean)
+    db.set('clcl', nv).write()
   }
 }
 
