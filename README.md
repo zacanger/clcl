@@ -39,6 +39,13 @@ exec i3 # your window manager goes here
 * Other init systems?
 * Postinstall to handle the daemon?
 
+## Bugs
+
+After running `clcl -c`, behavior is strange. Sometimes new changes never show
+up in the db, and other times a new change will restore everything that was
+cleared. Possibly race condition since reading from the clipboard and writing to
+JSON are both sync?
+
 ## License
 
 [MIT](./LICENSE.md)
