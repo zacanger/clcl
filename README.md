@@ -16,10 +16,9 @@ doesn't work yet. This is buggy.
 You'll need to manually start the daemon. I put this in my `~/.xinitrc`:
 
 ```shell
-#!/bin/sh
 # merge xresources, set keybinds, etc
+clcl-daemon &
 exec i3 # your window manager goes here
-clcl-daemon & # add this line
 ```
 
 ## Usage
@@ -38,6 +37,7 @@ clcl-daemon & # add this line
 * Work with primary selection?
 * Other platforms?
 * Other init systems?
+* Postinstall to handle the daemon?
 
 ## License
 
