@@ -31,6 +31,8 @@ exec i3 # your window manager goes here
   clcl -c      # clear all
 ```
 
+`clcl` stores up to 100 entries.
+
 ## Roadmap
 
 * Listen for copy events, rather than polling for changes synchronously
