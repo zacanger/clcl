@@ -41,18 +41,18 @@
     "clipboardy": "1.2.3",
     "lowdb": "1.0.0",
     "xdg-basedir": "3.0.0",
-    "zeelib": "8.2.0",
+    "zeelib": "8.2.2",
     "zrgs": "1.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "8.2.6",
-    "eslint": "5.4.0",
+    "babel-eslint": "10.0.1",
+    "eslint": "5.9.0",
     "eslint-config-zacanger": "3.4.1",
-    "eslint-plugin-babel": "5.1.0",
+    "eslint-plugin-babel": "5.3.0",
     "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-node": "7.0.1",
-    "eslint-plugin-promise": "4.0.0",
-    "eslint-plugin-unicorn": "6.0.0"
+    "eslint-plugin-node": "8.0.0",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-unicorn": "6.0.1"
   },
   "engines": {
     "node": ">=8.0.0"
