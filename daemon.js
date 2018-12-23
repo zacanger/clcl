@@ -11,12 +11,13 @@ const adapter = new FileSync(dbPath)
 const db = low(adapter)
 
 const sync = () => {
-  const contents = clip.readSync()
-  const current = db.get('clcl').value()
-  if (current[0] !== contents) {
-    const marks = [ contents ].concat(current).filter(Boolean)
-    const newVal = take(100, marks)
-    db.set('clcl', newVal).write()
+  const clipboardContents = clip.readSync()
+  const existingItems = db.get('clcl').value()
+  console.log({ clipboardContents, existingItems })
+  if (!existingItems || existingItems[0] !== clipboardContents) {
+    const allItems = [ clipboardContents ].concat(existingItems).filter(Boolean)
+    const newDb = take(100, allItems)
+    db.set('clcl', newDb).write()
   }
 }
 

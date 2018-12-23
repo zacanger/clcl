@@ -43,10 +43,8 @@ exec i3 # your window manager goes here
 
 ## Bugs
 
-After running `clcl -c`, behavior is strange. Sometimes new changes never show
-up in the db, and other times a new change will restore everything that was
-cleared. Possibly race condition since reading from the clipboard and writing to
-JSON are both sync?
+`clcl -c` doesn't actually work. Looks like a race condition between the sync
+daemon and clearing the db.
 
 ## License
 
