@@ -19,9 +19,7 @@
     "clcl-daemon": "./daemon.js"
   },
   "scripts": {
-    "preversion": "npm t",
-    "test": "npm run test:lint",
-    "test:lint": "sortpack && standard"
+    "preversion": "sortpack && standard"
   },
   "homepage": "https://github.com/zacanger/clcl#readme",
   "repository": {
@@ -45,7 +43,7 @@
     "zrgs": "1.0.2"
   },
   "devDependencies": {
-    "sortpack": "1.1.6",
+    "sortpack": "1.1.7",
     "standard": "12.0.1"
   },
   "engines": {
